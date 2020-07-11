@@ -2,15 +2,15 @@
     <% if task.errors.any? %>
         <div id="error_explanation">
             <ul>
-                <% task.error.full_messages.each do |msg| %>
+                <% message.error.full_messages.each do |msg| %>
                 <li><%= msg %></li>
                 <% end %>
             </ul>
         </div>
         <% end %>
         
-            <%= f.label :title, 'タイトル' %>
-            <%= f.text_field :title %>
+            <%= f.label :status, 'ステータス' %>
+            <%= f.text_field :status %>
             
             <%= f.content :content, 'タスク' %>
             <%= f.content :content %>
